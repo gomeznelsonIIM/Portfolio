@@ -1,0 +1,34 @@
+.titrecom{
+    padding-top: 0;
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+}
+
+.voiture{
+    padding-top: 5%;
+    position: absolute;
+    margin-left: 38%;
+    font-size: medium
+}
+
+
+.voiturepr{
+    width: 35%;
+    animation: slideLeft 25s;
+}
+
+
+@keyframes slideLeft {
+    from{
+        transform: translate(200%);
+    }
+    to{
+        transform: translate(0);
+    }
+    
+}
+
+
+
+

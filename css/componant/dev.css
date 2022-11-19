@@ -1,0 +1,23 @@
+.titredev{
+    font-size: 200%;
+    padding-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.texteair{
+    display: flex;
+    justify-content: center;
+}
+
+.airtag{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.airtagsite{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+}

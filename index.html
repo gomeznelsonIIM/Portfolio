@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar"> 
+        <a href="#" class="logo">PORTFOLIO</a>
+         <div class="nav-links ">
+            <ul>
+                <li class="moi"><a href="#moi">ABOUT</a></li>
+                <li><a href="#3d">Animation 3D</a></li>
+                <li><a href="#dev">Developpement web</a></li>
+                <li><a href="#com">Communication digitale</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+        <img src="image/vraimenu.png" alt="menu">
+        </div>
+    </nav>
+
+ <header>
+    <div id="tete">
+        <h1 class="nom">GOMEZ NELSON</h1>
+    </div>
+    <section id="moi">
+        <h3 class="aboutme">ABOUT ME</h3>
+        <p class="pmoi">
+            Étudiant passionné de l’informatique et de programmation. Je pratique dans mon temps libre la danse, le tennis et j'ai fait 7 ans de violon au conservatoire du 9ème arrondissement. <br> Cette année je compte m’épanouir dans le domaine de l’informatique grâce à l’Institut de l’Internet du Multimédia et ses nombreux axes.
+        </p>
+        <img class="profil" src="image/profil.png" alt="Photo de profil">
+    </section>
+</header>
+
+
+<main>
+    <section id="3d">
+        <h3 class="titre3d">ANIMATION 3D</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/archi.png" class="d-block w-100" alt="blender">
+              </div>
+              <div class="carousel-item">
+                <img src="image/archi2.png" class="d-block w-100" alt="blender2">
+              </div>
+              <div class="carousel-item">
+                <img src="image/archi3.png" class="d-block w-100" alt="blender3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <p class="description2">
+            Diorama
+          </p>
+          <p class="bluedio">Tout les objets de cette scène ont été réalisé sur le logociel Blender.</p>
+          <img class="bluediorama" src="image/scene.png" alt="bluediorama">
+          <p class="description3">
+            Modélisation 3D
+          </p>
+          <div class="video_lumiere">
+            <video controls>
+           <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg> <source src="image/GOMEZ_Nelson_G5_Lumiere.mp4" type=video/mp4>
+          </video>
+          </div>
+    </section>
+
+    <section id="com">
+        <h3 class="titrecom">Communication</h3>
+            <p class="voiture">
+                Pensez long terme peut faire appelle à la conscience écologique des gens. En effet sur le long terme, la voiture électrique va polluer beaucoup moins qu'une voiture classique. Les couleurs claires rappellent le ciel sans nuages gris et donc un avenir meilleur c'est à dire plus écologique.
+            </p>
+            <img class="voiturepr" src="image/voiturecom.png" alt="voiture">
+    </section>
+
+    <section id="dev">
+        <h3 class="titredev">Developpement Web</h3>
+            <p class="texteair">
+                Reproduction du site d'achat de Airtag.
+            </p>
+            <p class="p3d">
+              Le developpement web est pour ma part l'axe que je prefère et que je vise pour l'année prochaine. Malgré mes nombreuses erreurs de code ou difficultés de mise en page (couleur) je fais de mon mieux pour obtenir le résultat que je veux. A ce jour nous avons les bases du html et aussi des animations qui peuvent mettre en valeur un site bien structuré.
+          </p>
+            <img class="airtag" src="image/airtagsite.png" alt="airtag">
+            <a class="airtagsite" href="https://gomeznelsoniim.github.io/landing-page/">Airtag</a>
+     </section>
+</main>
+
+<footer class="bg-light text-center text-lg-start">
+  <div class="footer">
+    <div class="text-center p-3">
+       © 2022 Copyright:
+       <a>Gomez Nelson</a>
+      </div>
+    </div>
+    <div class="resau">
+        <a href="https://instagram.com/toto.1382?igshid=YmMyMTA2M2Y=" target="_blank"><img src="image/insta.png" alt="linke"><a> 
+        <a href="linkedin.com/in/nelson-gomez-4615a624b" target="_blank"><img src="image/linkedin.png" alt=""></a>
+    </div>
+</footer>
+
+<script>
+  const menu = document.querySelector(".menu")
+    const navlinks = document.querySelector(".nav-links")
+
+     menu.addEventListener('click',()=>{
+    navlinks.classList.toggle('mobile-menu')
+  })
+</script>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
